@@ -1,0 +1,24 @@
+{
+  "name": "pow-mongoose-timestamps",
+  "version": "1.0.0",
+  "description": "Add created and updated timestamps to Mongoose models",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/powmedia/pow-mongoose-timestamps.git"
+  },
+  "keywords": [
+    "mongoose",
+    "timestamps",
+    "node"
+  ],
+  "author": "Charlie Davison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/powmedia/pow-mongoose-timestamps/issues"
+  },
+  "homepage": "https://github.com/powmedia/pow-mongoose-timestamps"
+}
