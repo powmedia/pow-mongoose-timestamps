@@ -42,11 +42,11 @@ exports['timestamps'] = {
     item.pre('save', function(next) {
       next(new Error('Prevent save'));
     });
+    
+    var start = Date.now();
 
     //Let time pass to make sure updated time is different to created
     setTimeout(function() {
-      var start = Date.now();
-
       item.save(function(err) {
         if (err.message != 'Prevent save') return test.done(err);
 
@@ -58,6 +58,6 @@ exports['timestamps'] = {
 
         test.done();
       });
-    }, 10);
+    }, 100);
   }
 };

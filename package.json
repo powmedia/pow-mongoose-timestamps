@@ -4,7 +4,7 @@
   "description": "Add created and updated timestamps to Mongoose models",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "node_modules/.bin/nodeunit test.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/powmedia/pow-mongoose-timestamps/issues"
   },
-  "homepage": "https://github.com/powmedia/pow-mongoose-timestamps"
+  "homepage": "https://github.com/powmedia/pow-mongoose-timestamps",
+  "devDependencies": {
+    "mongoose": "^4.0.6",
+    "nodeunit": "^0.9.1"
+  }
 }
